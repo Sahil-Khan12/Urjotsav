@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 99vw;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    background-color: #faf2e6;
+}
+
+.urjo {
+    color: #28282B;
+}
+
+
+.parent {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns : repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows : 1fr;
+    grid-gap : 20px; */
+    gap: 40px;
+    align-items: space-around;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card {
+    height: 370px;
+    width: 300px;
+    overflow-x: hidden;
+}
+
+.card_img {
+    height: 170px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.searchBar {
+    width: 300px;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#carouselExample {
+    height: 50vw;
+    width: 85vw;
+    margin: 30px 0px 0px 0px;
+}
+
+#carousel_parent {
+
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.d-block {
+    border-radius: 7px;
+}
+
+.headings {
+    margin-left: 7%;
+    width: 100vw;
+    color: #26264b;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'poppins';
+    margin-top: 15px;
+}
+
+.nav_parent {
+    height: 80px;
+    background-color: #0075D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: 'Ephesis';
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.torn {
+    background-image: url('./assets/torn_2_copy.png');
+    height: 100px;
+    background-repeat: repeat-x;
+
+}
+
+.nav_torn {
+    position: relative;
+}
+
+.urj_logo {
+    position: absolute;
+    top: 0;
+    left: 43vw;
+    z-index: 2
+}
+
+
+.navbar {
+    padding: 10px 20px;
+    /* Add some padding */
+    /* Set the height of the navbar */
+    background-image: url("./assets/piemr-logo.png");
+    /* Set the logo image as background */
+    background-size: cover;
+    width: 100px;
+}
+
+@media (max-width:768px) {
+    .logo {
+        display: none;
+    }
+
+    .nav_parent {
+        justify-content: center;
+    }
+
+    .headings {
+        margin-top: none;
+    }
+
+    .urj_logo {
+        left: 37vw;
+    }
+
+}
+
+@media (max-width:1200px) {
+    #carousel_parent {
+        display: none;
+    }
+
+}
+
+@media (max-width:400px) {
+    .urj_logo {
+        left: 30vw;
+    }
+
+}
