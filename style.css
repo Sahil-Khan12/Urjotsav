@@ -128,23 +128,12 @@ input {
     width: 100px;
 }
 
-@media (max-width:768px) {
-    .logo {
-        display: none;
-    }
+.header-area {
+    background-color: #e3f2fd;
+}
 
-    .nav_parent {
-        justify-content: center;
-    }
-
-    .headings {
-        margin-top: none;
-    }
-
-    .urj_logo {
-        left: 37vw;
-    }
-
+body {
+    background-color: #faf2e6;
 }
 
 @media (max-width:1200px) {
@@ -154,9 +143,12 @@ input {
 
 }
 
-@media (max-width:400px) {
-    .urj_logo {
-        left: 30vw;
+@media (max-width:1200px) {
+    .img {
+        display: none;
+    }
+    .header-area{
+        height: 12vh;
     }
 
 }
